@@ -28,13 +28,14 @@ public class Main extends GameApplication {
     @Override
     protected void initSettings(GameSettings settings) {
         settings.setTitle("FXGL Benchmark");
-
+        settings.setGameMenuEnabled(false);
         settings.setWidth((int)screenWidth); //set it to the proper screen size
         settings.setHeight((int)screenHeight);
         settings.setManualResizeEnabled(false);
         settings.setFullScreenAllowed(true);
         settings.setFullScreenFromStart(true);
         settings.setProfilingEnabled(true);
+        settings.setPauseMusicWhenMinimized(false);
     }
 
     @Override
